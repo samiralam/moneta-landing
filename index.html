@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Moneta</title>
+    <title>Moneta: Crypto Payroll Made Simple</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
+    <meta name="description" content="Moneta - Crypto Payroll Made Simple">
+    <meta name="keywords" content="crypto, cryptocurrency, payroll">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -109,6 +108,13 @@
       }
     </style>
 
+    <!-- User styles -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
     <!-- Theme mode -->
     <script>
       let mode = window.localStorage.getItem('mode'),
@@ -155,110 +161,165 @@
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
       <header class="header navbar navbar-expand-lg position-absolute navbar-sticky navbar-dark bg-primary">
         <div class="container px-3">
-          <a href="index.html" class="navbar-brand pe-3">
+          <a href="#top" class="navbar-brand pe-3">
             <img src="assets/img/moneta_logo_transparent.png" width="200" alt="Moneta">
           </a>
           <div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
             <div class="offcanvas-header border-bottom border-light">
-              <h5 class="offcanvas-title text-white">Menu</h5>
+              <h5 class="offcanvas-title text-white">Moneta</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
-                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
-                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
-                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
-                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
-                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
-                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
-                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
-                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
-                  </ul>
+                <li class="nav-item">
+                  <a href="#payroll" class="nav-link">Payroll</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pricing.html" class="nav-link">Pricing</a>
+                  <a href="#invoice" class="nav-link">Invoice</a>
                 </li>
               </ul>
             </div>
-            <div class="offcanvas-header border-top border-light">
-              <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            <div class="offcanvas-header border-top border-light pb-0">
+              <a href="https://staging.app.monetagateway.com/login" class="btn btn-secondary w-100" rel="noopener">
+                Sign In
+              </a>
+            </div>
+            <div class="offcanvas-header border-light">
+              <a href="#get-started" class="btn btn-primary w-100" rel="noopener">
                 Get Started
               </a>
             </div>      
           </div>
-          <!-- <div class="dark-mode pe-lg-1 ms-auto me-4">
-            <div class="form-check form-switch mode-switch" data-bs-toggle="mode">
-              <input type="checkbox" class="form-check-input" id="theme-mode">
-              <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
-              <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
-            </div>
-          </div> -->
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="navbar-nav me-4 mb-2 mb-lg-0 d-none d-lg-inline-flex">
-            <a href="account-signin.html" class="nav-link">Sign In</a>
+            <a href="https://staging.app.monetagateway.com/login" class="nav-link">Sign In</a>
           </div>
-          <a href="account-signup.html" class="btn btn-secondary btn-sm fs-lg rounded d-none d-lg-inline-flex" rel="noopener">
+          <a href="#get-started" class="btn btn-secondary btn-sm fs-lg rounded d-none d-lg-inline-flex" rel="noopener">
             Get Started
           </a>
         </div>
       </header>
 
+      <!-- Top anchor -->
+      <a id="top" visibility: hidden;></a>
 
       <!-- Hero -->
-      <section class="bg-size-cover bg-repeat-0 bg-position-center position-relative overflow-hidden py-5 mb-4">
+      <section class="position-relative py-5 mb-4">
         <div class="container position-relative zindex-2 pt-5 pb-md-2 pb-lg-4 pb-xl-5">
           <div class="row pt-3 pb-2 py-md-4">
 
             <!-- Text -->
             <div class="col-xl-5 col-md-6 pt-lg-5 text-center text-md-start mb-4 mb-md-0">
               <h1 class="display-3 pb-2 pb-sm-3">The easiest way to add crypto to your business</h1>
-              <p class="fs-lg d-md-none d-xl-block pb-2 pb-md-0 mb-4 mb-md-5">Moneta offers small and medium sized-business the ability to seamlessly integrate cryptocurrency payroll and payment options into their existing processes.</p>
+              <p class="fs-lg d-xl-block pb-2 pb-md-0 mb-4 mb-md-5">Moneta offers small and medium sized-business the ability to seamlessly integrate cryptocurrency payroll and payment options into their existing processes.</p>
               <div class="d-flex justify-content-center justify-content-md-start pb-2 pt-lg-2 pt-xl-0">
                 <a href="#get-started" class="btn btn-lg btn-primary shadow-primary me-3 me-sm-4 fs-lg">Get Started</a>
-                <a href="#" class="btn btn-lg btn-outline-secondary">Learn More</a>
+                <a href="#payroll" class="btn btn-lg btn-outline-secondary">Learn More</a>
               </div>
-              <!-- <div class="d-flex align-items-center justify-content-center justify-content-md-start text-start pt-4 pt-lg-5 mt-xxl-5">
-                <div class="d-flex me-3">
-                  <div class="d-flex align-items-center justify-content-center bg-light rounded-circle" style="width: 52px; height: 52px;">
-                    <img src="assets/img/avatar/14.jpg" class="rounded-circle" width="48" alt="Avatar">
-                  </div>
-                  <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 52px; height: 52px;">
-                    <img src="assets/img/avatar/08.jpg" class="rounded-circle" width="48" alt="Avatar">
-                  </div>
-                  <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 52px; height: 52px;">
-                    <img src="assets/img/avatar/15.jpg" class="rounded-circle" width="48" alt="Avatar">
-                  </div>
-                </div>
-                <div class="text-light"><strong>400k+</strong> users already with us</div>
-              </div> -->
             </div>
 
-            <!-- Video -->
-            <div class="col-xl-7 col-md-6 d-md-flex justify-content-end">
-              <!-- <div class="position-relative top-50 start-50 w-75 h-75 translate-middle d-flex align-items-center justify-content-center zindex-5">
-                <a href="https://www.youtube.com/watch?v=wODsNtortYw" class="btn btn-video btn-icon btn-xl bg-white stretched-link" data-bs-toggle="video">
-                  <i class="bx bx-play"></i>
-                </a>
-              </div> -->
-              <div class="pt-4 mt-sm-3 px-3 px-sm-5 mx-md-5">
-                <img src="assets/img/laptopMoneta.png" width="786" class="rellax d-block mx-auto mt-lg-4" alt="Card" data-rellax-percentage="0.5" data-rellax-speed="1.1" data-disable-parallax-down="lg">
-              </div>
+            <!-- Image -->
+            <div class="col-xl-7 col-md-6 justify-content-end overflow-hidden">
+                <div class="overflow-hidden">
+                  <img src="assets/img/desktopMoneta.png" width="1000" style="border-radius: 1.5rem; max-width: none" alt="Dashboard">
+                </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Feature section (Trading) -->
-      <section class="dark-mode bg-dark position-relative pt-5 pb-4 py-md-5">
+      <!-- Payroll -->
+      <section id="payroll" class="bg-dark dark-mode container-fluid pt-5 pb-2 pb-md-3 py-lg-5 ps-5">
+        <div class="container">
+          <div class="row align-items-center my-3 py-md-3 py-lg-5">
+            <div class="col-md-6 col-xl-5 offset-lg-1 offset-xl-2 order-md-2 mb-2 mb-md-0 pb-4 pb-md-0">
+              <div class="position-relative mx-auto mx-md-0" style="max-width: 469px;">
+                <img src="assets/img/landing/app-showcase/features/screen01.png" class="rellax d-block" alt="Screen" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="md">
+                <div class="rellax position-absolute top-0 end-0 w-100 h-100" data-rellax-percentage="0.5" data-rellax-speed="0.75" data-disable-parallax-down="md">
+                  <img src="assets/img/landing/app-showcase/features/screen02.png" alt="Screen">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1 pb-md-4">
+              <h2 class="pb-3">Add Crypto Payroll <strong class="text-primary">Seamlessly</strong></h2>
+              <ul class="list-unstyled pb-3 mb-3">
+                <li class="d-flex align-items-center mb-2">
+                  <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                  Add crypto pay to your payroll with one click
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                  Safeguard your company from price volatility
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                  Fully compliant
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                  Integrates directly with Quickbooks
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                  Gusto compatibility coming soon
+                </li>
+              </ul>
+              <!-- <a href="#" class="btn btn-primary">
+                Learn more
+                <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+              </a> -->
+            </div>
+          </div>
+          <div class="row align-items-center mt-2 mt-md-0 pt-5 pt-md-4 pt-lg-0 pb-md-3 pb-lg-5 px-1">
+            <div class="col-md-6 col-lg-5 offset-xl-1 mb-2 mb-md-0 pb-4 pb-md-0">
+              <div class="position-relative mx-auto mx-md-0" style="max-width: 462px;">
+                <img src="assets/img/landing/app-showcase/features/screen03.png" class="rellax d-block" alt="Screen" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="md">
+                <div class="rellax position-absolute top-0 end-0 w-100 h-100 me-md-n3" data-rellax-percentage="0.5" data-rellax-speed="0.75" data-disable-parallax-down="md">
+                  <img src="assets/img/landing/app-showcase/features/screen04.png" alt="Screen">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-5 offset-lg-1">
+              <h2 class="pb-3"><strong class="text-primary">Effortless</strong> Onboarding for Employees</h2>
+              <div class="text-start pb-3">
+                <div class="col pb-1">
+                  <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                    <img src="assets/img/landing/app-showcase/features/cashback.svg" alt="Salary">
+                    <span class="ms-3">Receive some or all of your salary in crypto</span>
+                  </div>
+                </div>
+                <div class="col pb-1">
+                  <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                    <img src="assets/img/landing/app-showcase/features/statistics.svg" alt="Bookkeeping">
+                    <span class="ms-3">Self-custody your digital assets</span>
+                  </div>
+                </div>
+                <div class="col pb-1">
+                  <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                    <img src="assets/img/landing/app-showcase/features/security.svg" alt="Bookkeeping">
+                    <span class="ms-3">Moneta handles the bookkeeping and tax obligations</span>
+                  </div>
+                </div>
+              </div>
+              <!-- <a href="#" class="btn btn-primary">
+                Learn more
+                <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Invoice anchor -->
+      <a id="invoice" display: block; position: relative; top: -250px; visibility: hidden;></a>
+
+      <!-- Invoicing -->
+      <section class="container py-5 my-md-2 my-lg-4 my-xl-5">
 
         <!-- Text -->
-        <h2 class="h1 text-center mx-auto mt-n2 mt-sm-0 pt-md-2" style="max-width: 530px;">Accept Crypto Payments <strong class="text-decoration-underline">Securely</strong></h2>
+        <h2 class="h1 text-center mx-auto mt-n2 mt-sm-0 pt-md-2" style="max-width: 750px;">Accept Crypto Payments <strong class="text-primary">Securely</strong></h2>
         <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-5">
           <li class="d-flex fs-xl mx-3 mt-2 mt-sm-3">
             <i class="bx bx-check lead text-primary mt-1 me-2"></i>
@@ -276,89 +337,21 @@
 
         <!-- Parallax gfx -->
         <div class="position-relative px-4 px-sm-5 mb-3 mb-md-4">
-          <img src="assets/img/landing/saas-3/feature-1/main.png" width="1079" class="d-block mx-auto" style="border-radius: 1.5rem; box-shadow: 0 1.875rem 7.5rem -.625rem rgba(124,125,152, .2);" alt="Dashboard">
-          <div class="position-absolute w-100" style="left: 10%; bottom: 13%; padding-right: 74.33%;">
-            <img src="assets/img/landing/saas-3/feature-1/popup01.png" width="308" class="rellax d-block" style=" border-radius: .75rem; box-shadow: 0 .75rem 3.75rem -.625rem rgba(124,125,152, .2);" alt="Popup" data-rellax-percentage="0.5" data-rellax-speed="1" data-disable-parallax-down="lg">
+          <img src="assets/img/moneta-customers.png" width="1079" class="d-block mx-auto" style="border-radius: 1.5rem; box-shadow: 0 1.875rem 7.5rem -.625rem rgba(124,125,152, .2);" alt="Customers">
+          <div class="position-absolute w-100" style="left: 0; bottom: 13%; padding-right: 74.33%;">
+            <img src="assets/img/moneta-invoice-received.png" width="250" class="rellax d-block" style="border-radius: 0.75rem; box-shadow: rgba(124, 125, 152, 0.2) 0px 0.75rem 3.75rem -0.625rem; transform: translate3d(-28px, 39px, 0px);" alt="Popup" data-rellax-percentage="0.5" data-rellax-speed="1" data-disable-parallax-down="lg">
           </div>
-          <div class="position-absolute w-100" style="right: 0; top: 12%; padding-left: 74.16%;">
-            <img src="assets/img/landing/saas-3/feature-1/popup02.png" width="310" class="rellax d-block" style="border-radius: .75rem; box-shadow: -.46875rem 2.25rem 6.5rem 0 rgba(126,123,160, .2);" alt="Popup" data-rellax-percentage="0.5" data-rellax-speed="1" data-disable-parallax-down="lg">
+          <div class="position-absolute w-100" style="right: 0; top: 12%; padding-left: 70.16%;">
+            <img src="assets/img/moneta-invoice.png" width="300" class="rellax d-block" style="border-radius: 0.75rem; box-shadow: rgba(126, 123, 160, 0.2) -0.46875rem 2.25rem 6.5rem 0px; transform: translate3d(27px, 17px, 0px);" alt="Popup" data-rellax-percentage="0.5" data-rellax-speed="1" data-disable-parallax-down="lg">
           </div>
-          <div class="position-absolute w-100" style="right: 0; bottom: 9.4%; padding-left: 64.83%; padding-right: 5.5%;">
-            <img src="assets/img/landing/saas-3/feature-1/popup03.png" width="322" class="rellax d-block ms-auto" style="border-radius: .75rem; box-shadow: -.46875rem 2.25rem 6.5rem 0 rgba(120,118,148, .14);" alt="Popup" data-rellax-percentage="0.5" data-rellax-speed=".5" data-disable-parallax-down="lg">
-          </div>
-        </div>
-      </section>
-
-      <!-- Features -->
-      <section class="container pt-5 pb-2 pb-md-3 py-lg-5">
-        <div class="row align-items-center my-3 py-md-3 py-lg-5">
-          <div class="col-md-6 col-xl-5 offset-lg-1 offset-xl-2 order-md-2 mb-2 mb-md-0 pb-4 pb-md-0">
-            <div class="position-relative mx-auto mx-md-0" style="max-width: 469px;">
-              <img src="assets/img/landing/app-showcase/features/screen01.png" class="rellax d-block" alt="Screen" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="md">
-              <div class="rellax position-absolute top-0 end-0 w-100 h-100" data-rellax-percentage="0.5" data-rellax-speed="0.75" data-disable-parallax-down="md">
-                <img src="assets/img/landing/app-showcase/features/screen02.png" alt="Screen">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1 pb-md-4">
-            <h2 class="pb-3">Add Crypto Payroll Seamlessly</h2>
-            <ul class="list-unstyled pb-3 mb-3">
-              <li class="d-flex align-items-center mb-2">
-                <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
-                Add fully-compliant cryptocurrency pay to your payroll with one click
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
-                Integrates directly with Quickbooks
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
-                Gusto compatibility coming soon
-              </li>
-            </ul>
-            <a href="#" class="btn btn-primary">
-              Learn more
-              <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
-            </a>
+          <div class="position-absolute w-100" style="right: 0; bottom: 12.4%; padding-left: 64.83%; padding-right: 5.5%;">
+            <img src="assets/img/moneta-invoice-sent.png" width="250" class="rellax d-block ms-auto" style="border-radius: 0.75rem; box-shadow: rgba(120, 118, 148, 0.14) -0.46875rem 2.25rem 6.5rem 0px; transform: translate3d(11px, 26px, 0px);" alt="Popup" data-rellax-percentage="0.5" data-rellax-speed=".5" data-disable-parallax-down="lg">
           </div>
         </div>
-        <div class="row align-items-center mt-2 mt-md-0 pt-5 pt-md-4 pt-lg-0 pb-md-3 pb-lg-5">
-          <div class="col-md-6 col-lg-5 offset-xl-1 mb-2 mb-md-0 pb-4 pb-md-0">
-            <div class="position-relative mx-auto mx-md-0" style="max-width: 462px;">
-              <img src="assets/img/landing/app-showcase/features/screen03.png" class="rellax d-block" alt="Screen" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="md">
-              <div class="rellax position-absolute top-0 end-0 w-100 h-100 me-md-n3" data-rellax-percentage="0.5" data-rellax-speed="0.75" data-disable-parallax-down="md">
-                <img src="assets/img/landing/app-showcase/features/screen04.png" alt="Screen">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-5 offset-lg-1">
-            <h2 class="pb-3">Effortless Onboarding for Employees</h2>
-            <div class="row row-cols-1 row-cols-sm-2 text-start pb-3">
-              <div class="col pb-4">
-                <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
-                  <img src="assets/img/landing/app-showcase/features/payments.svg" alt="Easy Payments">
-                </div>
-                <p class="mb-0">Receive your salary in crypto, in part or whole.</p>
-              </div>
-              <div class="col pb-4">
-                <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
-                  <img src="assets/img/landing/app-showcase/features/cashback.svg" alt="Regular Cashback">
-                </div>
-                <p class="mb-0">Moneta handles the bookkeeping and tax obligations.</p>
-              </div>
-            </div>
-            <a href="#" class="btn btn-primary">
-              Learn more
-              <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
-            </a>
-          </div>
-        </div>
-        <!-- Extra spacing for dark mode only -->
-        <div class="pt-5 d-none d-dark-mode-block"></div>
       </section>
 
       <!-- CTA -->
-      <section class="bg-primary" id="get-started">
+      <section class="bg-primary container-fluid" id="get-started">
         <div class="rounded-3 py-5 px-4 px-sm-0">
           <div class="row justify-content-center py-sm-2 py-lg-5">
             <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 text-center">
@@ -397,10 +390,9 @@
         <div class="row pb-5">
           <div class="col-lg-4 col-md-6">
             <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
-              <!-- <img src="assets/img/moneta_logo_transparent.png" width="47" alt="Moneta"> -->
-              Moneta
+              <img src="assets/img/moneta_logo_orange_letters.png" alt="Moneta">
             </div>
-            <p class="fs-sm pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
+            <p class="fs-sm pb-lg-3 mb-4"></p>
           </div>
           <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
             <div id="footer-links" class="row">
@@ -409,13 +401,6 @@
                   <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
                 </h6>
                 <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
-                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Account</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Pricing</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Integrations</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Our Clients</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Blog</a></li>
-                  </ul>
                   <ul class="nav flex-column mb-2 mb-lg-0">
                     <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a></li>
                     <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a></li>
@@ -429,20 +414,20 @@
                 <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column mb-2 mb-lg-0">
                     <li class="nav-item">
+                      <a href="mailto:info@monetagateway.com" class="fw-medium d-inline-block px-0 pt-1 pb-2">info@monetagateway.com</a></li>
+                    <li class="nav-item">
                       <a href="https://twitter.com/Moneta_Gateway" class="nav-link d-inline-block px-0 pt-1 pb-2"><i class="bx bxl-twitter me-md-2"></i>Twitter</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
-                <h6 class="mb-2">Contact Us</h6>
-                <a href="mailto:info@monetagateway.com" class="fw-medium">info@monetagateway.com</a>
               </div>
             </div>
           </div>
         </div>
         <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
           &copy; All rights reserved. Made by 
-          <a class="nav-link d-inline-block p-0" href="https://www.samiralam.com/" target="_blank" rel="noopener">Sam Alam</a>
+          <a class="nav-link d-inline-block p-0" href="https://www.samiralam.com/" target="_blank" rel="noopener">Sam Alam.</a>
         </p>
       </div>
     </footer>
